@@ -6,31 +6,33 @@
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th>Amount</th>
-            <th>From Currency</th>
-            <th>To Currency</th>
-        </tr>
-        <tr>
-            <td><input id="amount" type="number"></td>
-            <td><select id="from">
-                <option id="fr_vnd">VND</option>
-                <option id="fr_usd">USD</option>
-            </select></td>
-            <td><select id="to">
-                <option id="to_usd">USD</option>
-                <option id="to_vnd">VND</option>
-            </select></td>
-            <td><button type="button" onclick="convert()">Convert</button></td>
-        </tr>
-        <tr>
-            <td colspan="4">Result: 
-                <label id="result"></label>
-                <label id="to_currency"></label>
-            </td>
-        </tr>
-    </table>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td><input id="amount" type="number"></td>
+                <td><select id="from">
+                    <option id="fr_vnd">VND</option>
+                    <option id="fr_usd">USD</option>
+                </select></td>
+                <td><select id="to">
+                    <option id="to_usd">USD</option>
+                    <option id="to_vnd">VND</option>
+                </select></td>
+                <td><button type="button" onclick="convert()">Convert</button></td>
+            </tr>
+            <tr>
+                <td colspan="4">Result: 
+                    <label id="result"></label>
+                    <label id="to_currency"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
 
     <script src="converter.js"></script>
 </body> 
