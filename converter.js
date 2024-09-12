@@ -1,7 +1,7 @@
 const ti_gia = 24750
 
 function convert(){
-    let amount = document.getElementById("amount").value
+    let amount = +document.getElementById("amount").value
     let fr_currency = document.getElementById("from").value
     let to_currency = document.getElementById("to").value
 
